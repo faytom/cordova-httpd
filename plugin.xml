@@ -43,7 +43,8 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 </platform>
 
 <platform name="ios">
-
+<dependency id="cordova-plugin-chrome-apps-iossocketscommon@1" />
+    
 <config-file parent="/*" target="config.xml">
 <feature name="CorHttpd">
 <param name="ios-package" value="CorHttpd" />
@@ -88,8 +89,6 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 <source-file src="src/ios/CocoaHttpd/Categories/DDNumber.m" />
 <header-file src="src/ios/CocoaHttpd/Categories/DDRange.h" />
 <source-file src="src/ios/CocoaHttpd/Categories/DDRange.m" />
-<header-file src="src/ios/CocoaHttpd/Vendor/CocoaAsyncSocket/GCDAsyncSocket.h" />
-<source-file src="src/ios/CocoaHttpd/Vendor/CocoaAsyncSocket/GCDAsyncSocket.m" />
 <source-file src="src/ios/CocoaHttpd/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.h" />
 <source-file src="src/ios/CocoaHttpd/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.m" />
 <header-file src="src/ios/CocoaHttpd/Vendor/CocoaLumberjack/DDFileLogger.h" />
@@ -112,6 +111,8 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 </platform>
 
     <platform name="osx">
+        <dependency id="cordova-plugin-chrome-apps-iossocketscommon@1" />
+        
         <config-file parent="/*" target="config.xml">
             <feature name="CorHttpd">
                 <param name="ios-package" value="CorHttpd" />
@@ -156,8 +157,6 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         <source-file src="src/ios/CocoaHttpd/Categories/DDNumber.m" />
         <header-file src="src/ios/CocoaHttpd/Categories/DDRange.h" />
         <source-file src="src/ios/CocoaHttpd/Categories/DDRange.m" />
-        <header-file src="src/ios/CocoaHttpd/Vendor/CocoaAsyncSocket/GCDAsyncSocket.h" />
-        <source-file src="src/ios/CocoaHttpd/Vendor/CocoaAsyncSocket/GCDAsyncSocket.m" />
         <source-file src="src/ios/CocoaHttpd/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.h" />
         <source-file src="src/ios/CocoaHttpd/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.m" />
         <header-file src="src/ios/CocoaHttpd/Vendor/CocoaLumberjack/DDFileLogger.h" />
